@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"/>
+    <meta charset="UTF-8">
+    <title>2048</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+        <div id="touchArea"></div>
+        <div id="score-borad">当前分数：<span></span></div>
+        <ul id="gameView">
+            <li id="00" class=""></li>
+            <li id="01" class=""></li>
+            <li id="02" class=""></li>
+            <li id="03" class=""></li>
+
+            <li id="10" class=""></li>
+            <li id="11" class=""></li>
+            <li id="12" class=""></li>
+            <li id="13" class=""></li>
+
+            <li id="20" class=""></li>
+            <li id="21" class=""></li>
+            <li id="22" class=""></li>
+            <li id="23" class=""></li>
+
+            <li id="30" class=""></li>
+            <li id="31" class=""></li>
+            <li id="32" class=""></li>
+            <li id="33" class=""></li>
+        </ul>
+            <img src="上.png" id="shang">
+            <img src="左.png" id="zuo">
+            <img src="右.png" id="you">
+            <img src="下.png" id="xia">
+        <button onmousedown="changeColor(this)"
+                onmouseup="this.style.backgroundColor = '#9DCD14';playAgain();">
+                重新开始
+        </button>
+</body>
+</html>
